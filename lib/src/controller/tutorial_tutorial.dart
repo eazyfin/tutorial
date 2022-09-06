@@ -6,7 +6,10 @@ import 'package:tutorial/src/painter/painter.dart';
 
 class Tutorial {
   //FUNÇÃO QUE EXIBE O TUTORIAL
-  static showTutorial(BuildContext context, List<TutorialItem> children) async {
+  static showTutorial(
+    BuildContext context,
+    List<TutorialItem> children,
+  ) async {
     int count = 0;
     var size = MediaQuery.of(context).size;
     OverlayState? overlayState = Overlay.of(context);
@@ -35,10 +38,12 @@ class Tutorial {
                       size: size,
                       painter: HolePainter(
                           shapeFocus: element.shapeFocus,
-                          dx: offset.dx + (sizeWidget.width / 2),
-                          dy: offset.dy + (sizeWidget.height / 2),
-                          width: sizeWidget.width,
-                          height: sizeWidget.height),
+                          dx: offset.dx +
+                              ((element.width ?? sizeWidget.width) / 2),
+                          dy: offset.dy +
+                              ((element.height ?? sizeWidget.height) / 2),
+                          width: element.width ?? sizeWidget.width,
+                          height: element.height ?? sizeWidget.height),
                     ),
                     Positioned(
                       top: element.top,

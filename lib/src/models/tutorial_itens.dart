@@ -10,12 +10,16 @@ class TutorialItem {
   final double? bottom;
   final double? left;
   final double? right;
+  final double? width;
+  final double? height;
   final Widget? widgetNext;
   final CrossAxisAlignment crossAxisAlignment;
   final MainAxisAlignment mainAxisAlignment;
   final bool? touchScreen;
 
   TutorialItem({
+    this.width,
+    this.height,
     this.top,
     this.bottom,
     this.left,
