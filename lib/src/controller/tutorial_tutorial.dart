@@ -38,10 +38,8 @@ class Tutorial {
                       size: size,
                       painter: HolePainter(
                           shapeFocus: element.shapeFocus,
-                          dx: offset.dx +
-                              ((element.width ?? sizeWidget.width) / 2),
-                          dy: offset.dy +
-                              ((element.height ?? sizeWidget.height) / 2),
+                          dx: offset.dx + (sizeWidget.width / 2),
+                          dy: offset.dy + (sizeWidget.height / 2),
                           width: element.width ?? sizeWidget.width,
                           height: element.height ?? sizeWidget.height),
                     ),
