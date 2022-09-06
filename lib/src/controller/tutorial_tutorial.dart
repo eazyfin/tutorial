@@ -49,7 +49,7 @@ class Tutorial {
                       left: element.left,
                       right: element.right,
                       child: Container(
-                        width: size.width * 0.8,
+                        //width: size.width * 0.8,
                         child: Column(
                           crossAxisAlignment: element.crossAxisAlignment,
                           mainAxisAlignment: element.mainAxisAlignment,
