@@ -33,6 +33,7 @@ class Tutorial {
               child: Scaffold(
                 backgroundColor: Colors.transparent,
                 body: Stack(
+                  alignment: Alignment.topCenter,
                   children: [
                     CustomPaint(
                       size: size,
